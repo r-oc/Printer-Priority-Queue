@@ -64,48 +64,7 @@ int main() {
         }
         
     }
-    /*TESTING TESTING
-    NODE* testNode1 = (NODE*)malloc(sizeof(NODE));
-    DOCUMENT* testDoc1 = (DOCUMENT*)malloc(sizeof(DOCUMENT));
-    testDoc1->priority = 3;
-    testDoc1->docID = 1;
-    testDoc1->pages = 2;
-    testDoc1->cycles = 0;
-    testNode1->dataPtr = testDoc1;
-    list->head = testNode1;
-    
-    insertNode(testNode1, list);
-    
-    NODE* testNode2 = (NODE*)malloc(sizeof(NODE));
-    DOCUMENT* testDoc2 = (DOCUMENT*)malloc(sizeof(DOCUMENT));
-    testDoc2->priority = 3;
-    testDoc2->docID = 2;
-    testDoc2->pages = 22;
-    testDoc2->cycles = 0;
-    testNode2->dataPtr = testDoc2;
-    
-    insertNode(testNode2, list);
 
-    NODE* testNode3 = (NODE*)malloc(sizeof(NODE));
-    DOCUMENT* testDoc3 = (DOCUMENT*)malloc(sizeof(DOCUMENT));
-    testDoc3->priority = 2;
-    testDoc3->docID = 3;
-    testDoc3->pages = 3;
-    testDoc3->cycles = 0;
-    testNode3->dataPtr = testDoc3;
-    
-    insertNode(testNode3, list);
-    
-    NODE* testNode4 = (NODE*)malloc(sizeof(NODE));
-    DOCUMENT* testDoc4 = (DOCUMENT*)malloc(sizeof(DOCUMENT));
-    testDoc4->priority = 2;
-    testDoc4->docID = 4;
-    testDoc4->pages = 3;
-    testDoc4->cycles = 0;
-    testNode4->dataPtr = testDoc4;
-    
-    insertNode(testNode4, list);
-*/
     printLinkedList(list);
 
     printf("End of program\n");
@@ -255,14 +214,5 @@ void insertNode(NODE* node, LIST* list) {
     prevNode->next = node;
     node->next = NULL;
     (list->count)++;
-    
-    printf("\n----- End of insertNode -----\n");
-    
+        
 }
-
-
-
-
-
-
-
